@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div id="counter"><center>20</center></div>
+    <div>
+        <h1 id="title">Welcome to my Travel Blog.</h1>
+        <p id="desc">I will be showcasing my visits to <b>Zurich,</b><b> Tokyo,</b><b> Sydney,</b><b> and London.</b></p>
+    </div>
+    <script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("index2.html");
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+    
